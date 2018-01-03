@@ -1,0 +1,40 @@
+///////////////////////////////////////////////////////////
+// GSS                                                   //
+///////////////////////////////////////////////////////////
+
+@charset "utf-8";
+
+// Vendors ....................... Thirdy-party software //
+// @import "vendors/…";
+
+// Vendor Overwrites ............ Third-party overwrites //
+@import "vendors/overwrites/vendor-name";
+
+// Base styles ......... Defaults and base HTML elements //
+@import "base/utils";
+@import "base/colors";
+@import "base/typography";
+@import "base/forms";
+@import "base/tables";
+
+// Modules ............................... UI components //
+@import "modules/grid";
+//
+@import "modules/alerts";
+@import "modules/articles";
+@import "modules/cards";
+@import "modules/dropdowns";
+@import "modules/figures";
+@import "modules/footers";
+@import "modules/graphs";
+@import "modules/headers";
+@import "modules/icons";
+@import "modules/logos";
+@import "modules/menus";
+@import "modules/motion";
+@import "modules/overlays";
+@import "modules/sections";
+@import "modules/sidebars";
+
+// Pages ......................... Specific page styling //
+@import "pages/page-name";
