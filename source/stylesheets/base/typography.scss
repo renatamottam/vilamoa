@@ -1,3 +1,72 @@
 ///////////////////////////////////////////////////////////
 // Typography                              (Base styles) //
 ///////////////////////////////////////////////////////////
+
+
+///////// Types /////////
+
+$font-base:    'Roboto Slab', serif;
+$font-display: 'Open Sans', sans-serif;
+
+$regular:   400;
+$semibold:  600;
+$bold:      700;
+$extrabold: 800;
+
+
+///////// Styles /////////
+
+html, body {
+  margin: 0;
+  font-family: $font-base;
+  font-size: size(base);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, p, a { margin: 0; }
+
+h1    { font-size: size(huge); }
+h2    { font-size: size(big); }
+h3    { font-size: size(medium); }
+p     { font-size: size(regular); }
+small { font-size: size(small); }
+
+strong { font-weight: $bold;}
+a { text-decoration: none; }
+li { list-style: none; }
+
+.type-hidden {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999em;
+}
+
+.type-link {
+  &.is-default {
+    border-bottom: size(tiny-alt) solid transparent;
+    padding-bottom: $gutter-small;
+    font-weight: $bold;
+    &.is-blue {
+      border-color: $yellow-light;
+      color: $blue-dark;
+    }
+  }
+  &.is-pill {
+    @extend %border-radius;
+    font-family: $font-display;
+    font-size: size(regular);
+    text-transform: uppercase;
+    letter-spacing: 1.5;
+    border-width: size(tiny-alt) solid transparent;
+    padding: $gutter-small-alt $gutter-medium;
+    font-weight: $extrabold;
+    &.is-yellow {
+      border-color: $yellow-light;
+      color: $yellow-light;
+    }
+  }
+}

@@ -1,3 +1,17 @@
 ///////////////////////////////////////////////////////////
 // Figures                                      (Module) //
 ///////////////////////////////////////////////////////////
+
+
+.figure {
+	&.of-hero {
+		$image-half-size: 9.7rem;
+
+		position: absolute;
+		top: 50%;
+		margin-top: calc(-#{$image-half-size} - #{$gutter-big} );
+
+		&.at-right { right: -$gutter-medium; }
+		&.at-left  { left: -$gutter-medium; }
+	}
+}

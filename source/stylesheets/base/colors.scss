@@ -1,3 +1,28 @@
 ///////////////////////////////////////////////////////////
 // Colors                                  (Base styles) //
 ///////////////////////////////////////////////////////////
+
+$yellow-dark:    #f8bd00;
+$yellow-light:   #ffe451;
+
+$orange-darker:  #a23c00;
+$orange-dark:    #e65500;
+$orange-light:   #ef900b;
+
+$blue-dark:      #0360c6;
+$blue-light:     #2c89ef;
+
+$purple-darker:  #69004e;
+$purple-dark:    #8f096d;
+$purple-light:   #ae5199;
+$purple-lighter: transparentize($purple-light, .87);
+
+$black:          #1a1919;
+$white:          #ffffff;
+
+
+/////////////////
+// Gradients
+/////////////////
+
+$yellow-gradient: linear-gradient(-180deg, $yellow-light 0%, $yellow-dark 100%);

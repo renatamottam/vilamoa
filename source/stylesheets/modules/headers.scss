@@ -1,3 +1,28 @@
 ///////////////////////////////////////////////////////////
 // Headers                                      (Module) //
 ///////////////////////////////////////////////////////////
+
+.header {
+	&.of-hero {
+		position: relative;
+		h1 {
+		  position: relative;
+		  border-top: $gutter-small solid $yellow-light;
+		  border-bottom: $gutter-small solid $yellow-dark;
+		  height: calc(100vh - 8rem);
+		  display: flex;
+	    align-items: center;
+  	  justify-content: center;
+			&:before, &:after {
+			  content: "";
+			  position: absolute;
+			  background-image: $yellow-gradient;
+			  top: -$gutter-small;
+			  bottom: -$gutter-small;
+			  width: $gutter-small;
+			}
+			&:before { left: 0; }
+			&:after  { right: 0; }
+		}
+	}
+}

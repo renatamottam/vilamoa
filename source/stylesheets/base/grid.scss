@@ -1,0 +1,47 @@
+///////////////////////////////////////////////////////////
+// Grid                                    (Base styles) //
+///////////////////////////////////////////////////////////
+
+$base:  20px;
+
+$size: (
+  huge:     3rem,   // 60
+  big:      2.1rem, // 42
+  base:     $base,  // 20
+  regular:  .75rem, // 15
+  small:    .6rem,  // 12
+  tiny:     .5rem,  // 10
+  tiny-alt: .2rem,  //  4
+  micro:    .05rem  //  1
+);
+
+@function size($size-number: regular) { @return map-get($size, $size-number); }
+
+$gutter-biggest:     5rem;              // 100
+$gutter-bigger:      size(base) * 3;    //  60
+$gutter-big:         size(base) * 2;    //  40
+$gutter-medium:      size(base) * 1.5;  //  30
+$gutter-regular-alt: size(base) * 1.25; //  25
+$gutter-regular:     size(base);        //  20
+$gutter-small-alt:   size(regular);     //  15
+$gutter-small:       size(base) / 2;    //  10
+$gutter-tiny:        size(base) / 4;    //   5
+$gutter-micro:       size(micro);       //   1
+
+
+body {
+  position: relative;
+  right: 0;
+  padding: $gutter-big $gutter-bigger 0;
+  overflow-x: hidden;
+  transition: right .3s ease-in-out;
+  color: $purple-darker;
+}
+
+.grid {
+  &.is-content {
+    width: 100%;
+    padding: 0 $gutter-small;
+    max-width: 46rem;
+  }
+}

@@ -1,3 +1,14 @@
 ///////////////////////////////////////////////////////////
 // Menus                                        (Module) //
 ///////////////////////////////////////////////////////////
+
+.menu {
+	&.at-landing {
+		text-align: center;
+		li {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 $gutter-bigger;
+		}
+	}
+}

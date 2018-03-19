@@ -1,3 +1,10 @@
 ///////////////////////////////////////////////////////////
 // Utils                                   (Base styles) //
 ///////////////////////////////////////////////////////////
+
+// Normalize
+ul { padding: 0; }
+
+
+// Mixins & placeholders
+%border-radius { border-radius: $gutter-big; }

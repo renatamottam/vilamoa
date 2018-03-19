@@ -5,28 +5,26 @@
 @charset "utf-8";
 
 // Vendors ....................... Thirdy-party software //
-// @import "vendors/…";
-
-// Vendor Overwrites ............ Third-party overwrites //
-@import "vendors/overwrites/vendor-name";
+@import "vendors/bootstrap/variables";
+// @import "vendors/flickity";
 
 // Base styles ......... Defaults and base HTML elements //
-@import "base/utils";
 @import "base/colors";
+@import "base/grid";
+@import "base/utils";
 @import "base/typography";
 @import "base/forms";
-@import "base/tables";
+
+// Vendor Overwrites ............ Third-party overwrites //
+// @import "vendors/overwrites/flickity";
 
 // Modules ............................... UI components //
-@import "modules/grid";
 //
 @import "modules/alerts";
 @import "modules/articles";
 @import "modules/cards";
-@import "modules/dropdowns";
 @import "modules/figures";
 @import "modules/footers";
-@import "modules/graphs";
 @import "modules/headers";
 @import "modules/icons";
 @import "modules/logos";
@@ -37,4 +35,4 @@
 @import "modules/sidebars";
 
 // Pages ......................... Specific page styling //
-@import "pages/page-name";
+@import "pages/landing";
